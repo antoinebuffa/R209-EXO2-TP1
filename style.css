@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: calc(100% - 22px); /* Ajustement pour tenir compte de la bordure */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-group label,
+.form-group input[type="checkbox"] {
+    display: inline;
+    color: #333;
+}
+
+select {
+    appearance: none; /* Supprimer l'apparence par défaut du navigateur */
+}
+
+/* Personnalisation du select */
+select {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Stylisation des options dans le select */
+select option {
+    padding: 10px;
+}
+
+/* Stylisation des boutons radios */
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #333;
+}
+
+input[type="radio"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="radio"]:checked + label:before {
+    background-color: #007bff;
+}
+
+/* Personnalisation des cases à cocher */
+input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + label:before {
+    content: '\2713'; /* Unicode pour le symbole de coche */
+    font-size: 14px;
+    color: #007bff;
+}
